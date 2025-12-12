@@ -1,0 +1,1 @@
+const express=require("express");const {addLead,getLeads,updateLead}=require("../controllers/leadController");const router=express.Router();router.post("/",addLead);router.get("/",getLeads);router.put("/:id",updateLead);module.exports=router;
